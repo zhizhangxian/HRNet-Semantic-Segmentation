@@ -286,8 +286,7 @@ def main():
                   epoch_iters, config.TRAIN.LR, num_iters,
                   trainloader, optimizer, model, writer_dict)
 
-        valid_loss, mean_IoU, IoU_array = validate(config, 
-                    testloader, model, writer_dict)
+        valid_loss, mean_IoU, IoU_array = validate(config, testloader, model, writer_dict)
 
         if args.local_rank <= 0:
             logger.info('=> saving checkpoint to {}'.format(

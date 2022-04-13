@@ -56,7 +56,7 @@ _C.LOSS.BALANCE_WEIGHTS = [1]
 # DATASET related params
 _C.DATASET = CN()
 _C.DATASET.ROOT = ''
-_C.DATASET.DATASET = 'cityscapes'
+_C.DATASET.DATASET = '/seu_share/home/wkyang/datasets/cityscapes'
 _C.DATASET.NUM_CLASSES = 19
 _C.DATASET.TRAIN_SET = 'list/cityscapes/train.lst'
 _C.DATASET.EXTRA_TRAIN_SET = ''
